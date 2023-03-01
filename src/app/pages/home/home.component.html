@@ -1,0 +1,11 @@
+<p>home works!</p>
+
+<ul>
+    <li routerLink="/serie/12" routerLinkActive="selected">Rota 1</li>
+    <li [routerLink]="['/serie/' + parametroVar]"  routerLinkActive="selected">Rota 2</li>
+    <li routerLink="rota3" routerLinkActive="selected">Rota 3</li>
+    <!-- localhost:4200/home/rota3 -->
+</ul>
+
+
+<button (click)="gotoSerie()">Ir para série</button>
