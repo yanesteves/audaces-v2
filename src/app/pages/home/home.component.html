@@ -1,11 +1,15 @@
 <p>home works!</p>
 
-<ul>
-    <li routerLink="/serie/12" routerLinkActive="selected">Rota 1</li>
-    <li [routerLink]="['/serie/' + parametroVar]"  routerLinkActive="selected">Rota 2</li>
-    <li routerLink="rota3" routerLinkActive="selected">Rota 3</li>
-    <!-- localhost:4200/home/rota3 -->
-</ul>
+<app-menu>
+    <li routerLink="/serie/12">Série 12</li>
+    <li [routerLink]="['/serie/' + parametroVar]">Série 25</li>
+    <li routerLink="rota3">Rota 3 (inexistente)</li>
+</app-menu>
+
+<!-- <button (click)="gotoSerie()">Ir para série</button> -->
 
 
-<button (click)="gotoSerie()">Ir para série</button>
+<app-projecao-nomeada>
+    <h4 titulo>Título do componente filho</h4>
+    <p conteudo>Conteúdo do componente filho</p>
+</app-projecao-nomeada>
