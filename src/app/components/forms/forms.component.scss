@@ -1,0 +1,13 @@
+.form {
+    max-width: 240px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 15%;
+    * {
+        margin-top: 10px;
+    }
+}
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
