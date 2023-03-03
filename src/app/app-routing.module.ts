@@ -14,10 +14,10 @@ const routes: Routes = [
 
   {
     path: '',
-    component: ContentComponent, 
+    component: ContentComponent,    
     children: [
       // https://endereco.com/home
-      { path: 'home', component: HomeComponent },      
+      { path: 'home', component: HomeComponent },
       { path: 'page2', component: Page2Component },
     ]
   },
@@ -25,9 +25,9 @@ const routes: Routes = [
   // https://endereco.com/serie/codigo_da_serie 
   // canActivate: [() => inject(myGuard).canActivate()]
   { path: 'serie/:id', component: SerieComponent, canActivate: [AuthGuard] },
-  
+
   //rotas não existentes
-  { path: '**', component: NotfoundComponent }  ,
+  { path: '**', component: NotfoundComponent },
 
 
   // {
