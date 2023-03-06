@@ -7,11 +7,15 @@ import { HomeComponent } from './pages/home/home.component';
 import { NotfoundComponent } from './pages/notfound/notfound.component';
 import { SerieComponent } from './pages/serie/serie.component';
 import { Page2Component } from './pages/page2/page2.component';
+import { LoginComponent } from './pages/login/login.component';
 
 const routes: Routes = [
   // rota “vazia” é redirecionado à home
   { path: '', redirectTo: 'home', pathMatch: 'full' },
 
+  {
+    path: 'login', component: LoginComponent
+  },
   {
     path: '',
     component: ContentComponent,    

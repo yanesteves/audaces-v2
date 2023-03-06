@@ -1,0 +1,12 @@
+<form class="form" [formGroup]="myForm" (ngSubmit)="onSubmit()">
+    <div class="form-group">
+        <label>E-mail</label>
+        <input placeholder="E-mail" type="email" formControlName="email">
+    </div>
+    <div class="form-group">
+        <label>Senha</label>
+        <input placeholder="Senha" type="password" formControlName="password">
+    </div>
+    
+    <button [disabled]="!myForm.valid" type="submit">Entrar</button>
+</form>
