@@ -1,15 +1,15 @@
-<p>home works!</p>
+<!-- <button class="b1 margem-1" (click)="mudarNome()">Botão 1</button>
 
-<app-menu>    
-    <li routerLink="/serie/12">Série 12</li>
-    <li [routerLink]="['/serie/' + parametroVar]">Série 25</li>
-    <li>NG CONTENT</li>
-    <li routerLink="rota3">Rota 3 (inexistente)</li>    
-</app-menu>
+<button class="b2 margem-1" (click)="qualNome()">Diminuir Fonte</button> -->
 
-<!-- <button (click)="gotoSerie()">Ir para série</button> -->
+<!-- <input type="text" [(ngModel)]="nome" > -->
 
-<app-projecao-nomeada>
-    <p conteudo>Conteúdo do componente filho</p>
-    <h4 titulo>Título do componente filho</h4> 
-</app-projecao-nomeada>
+
+<!-- No typescript: -->
+  <!-- <div [ngStyle]="obterEstilo()">
+    Este texto tem estilo dinâmico!
+</div> -->
+
+<span>E-mail: {{ email }}</span>
+<br>
+<span>Usuário: {{ email | gerarUsuario }}</span>

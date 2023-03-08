@@ -10,3 +10,29 @@
 // .color-black {
 //     color: #1c1c1c;
 // }
+
+$numero-de-margens: 10;
+
+// Loop for para gerar as margens
+@for $i from 1 through $numero-de-margens {
+  .margem-#{$i} {
+    margin: $i * 10px;
+  }
+}
+
+@mixin border-radius($raio: 5px) {
+    border-radius: $raio;
+    -moz-border-radius: $raio;
+    -webkit-border-radius: $raio;
+}
+
+button {
+    @include border-radius;
+}
+
+.b1 {
+    @include border-radius(2px);
+}
+.b2 {
+    @include border-radius(20px);
+}

@@ -34,13 +34,13 @@ export class FormsComponent implements OnInit {
 
   jaTentouEnviar = 0;
   onSubmit() {
-    console.log(this.myForm)
+
     if (!this.myForm.valid) {
       console.log('Algo não está de acordo.')
       return;
     }
 
-    const data: ILogin = this.myForm.value;
+    const data: ILogin = this.myForm.value;    
     this.webService.post('/login', this.myForm.value)
   }
   

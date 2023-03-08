@@ -16,6 +16,8 @@ import { Page2Component } from './pages/page2/page2.component';
 import { ProjecaoNomeadaComponent } from './components/projecao-nomeada/projecao-nomeada.component';
 import { FormsComponent } from './components/forms/forms.component';
 import { LoginComponent } from './pages/login/login.component';
+import { ListaComponent } from './pages/lista/lista.component';
+import { Pipe1Pipe } from './pipes/pipe1.pipe';
 
 @NgModule({
   declarations: [
@@ -31,6 +33,8 @@ import { LoginComponent } from './pages/login/login.component';
     ProjecaoNomeadaComponent,
     FormsComponent,
     LoginComponent,
+    ListaComponent,
+    Pipe1Pipe,
   ],
   imports: [
     BrowserModule,
